@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{--gradient:linear-gradient(45deg,
+    #845ec2,#d65db1,#ff6f91,
+    #ff9671,#ffc75f,#f9f871,);}
+
+.fun{border:0;padding:0.5em 1.5em;font-size:2rem;
+    background-image: var(--gradient);
+    background-size: 300%;
+    background-position: left;
+    transition: background-position 1s;
+    }
+    /*linear-gradient(45deg,red,blue);*/
+
+body{font-family: basic-sans,sans-serif;
+    min-height: 100vh;display: flex;
+    justify-content: center;align-items: center;
+    font-size: 1.125em;line-height: 1.6;color:#333;
+    background:#ddd;}
+.fun:hover{background-image: linear-gradient(red,blue);}

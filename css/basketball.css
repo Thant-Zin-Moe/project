@@ -1,0 +1,569 @@
+*{ margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+}
+.main_page{
+    background-image: url("image/lolo.webp");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+
+.ugly  {
+    margin-left: 0;
+    float:top; 
+}
+.kk{
+    border-radius: 2rem;
+    width: 80px;
+    height: 80px;
+}
+
+header  nav{
+   /* background-color: deeppink;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   /* margin-top: 2rem;*/
+}
+.logo img{
+    width: 30px;
+    margin-left: 150px;
+    cursor: pointer;
+}
+.logo p{
+    color:red; 
+    font-size: 2rem;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    display: inline-block;
+
+}
+
+header nav ul{
+    list-style: none;
+    margin-right: 8rem;
+
+}
+
+header nav ul li a{
+    font-family: "Myrid Pro";
+    font-size: larger;
+    position: relative;
+    font-size: 1.1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+}
+header nav ul li a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 3px;
+    background:red;
+    border-radius: 5px;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform.5s;
+}
+header nav ul li a:hover:after{
+    transform-origin: left;
+    transform: scaleX(1);
+}
+header nav ul li a:hover{
+    color: cyan;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.text-box{
+    width: 40%;
+    top: 30%;
+    left: 30%;
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: 45%;
+}
+.text-box h1
+{
+    font-size: 62px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.text-box h1:hover{
+    color: cyan;
+    transform-origin: left;
+    transform: scaleX(1);
+    transition: .5s;
+}
+
+.text-box p
+{
+    margin: 10px 0 0 40x;
+    font-size: larger;
+    color:chartreuse;
+}
+.uit{
+    margin-top: 20%;
+    margin-left: 40%;
+    width: 50%;
+    color: white;
+}
+.uit h1{
+    font-size: 40px;
+    font-style: italic;
+    font-weight: 500;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: red;
+}
+.uit p{
+    font-size: larger;
+    font-weight: 500;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: justify;
+}
+.hero
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    padding: 8px 24px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.hero:hover
+{
+    border: 1px solid red;
+    background: red;
+    transition: 0.5s;
+}
+.course
+{
+    background-image: url("image/spsp.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+}
+
+.course h1
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.course p{
+    font-size: 25px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+}
+
+.row
+{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.course-col
+{
+    flex-basis: 31%;
+    backdrop-filter: blur(5px);border: solid 3px rgb(240, 58, 58);box-shadow: 0px 15px 50px 10px black;
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.course-col h3
+{
+    text-align: center;
+    font-weight: 600;
+    color:cyan;
+    margin: 10px 0;
+    font-size: xx-large;
+    font-size: 400;
+
+}
+.course-col p{
+    font-size: large;
+    font-weight: 300;
+}
+
+.course-col:hover
+{
+    box-shadow: 0 0 20px 0 rgba(212, 9, 9, 0.2);
+}
+
+
+.Laoo{
+    background-image: url("image/imagevivo.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+}
+
+.campus h3 {
+    color: cyan;
+    font-size: larger;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.campus h1{
+     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+     font-size: xx-large;
+     color:cyan;
+     font-weight: 500;
+     font-style: italic;
+     padding-top: 20px;
+}
+.campus p{
+    color:cyan;
+    font-size: large;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 500;
+}
+.Fa{
+    margin-left: 50px;
+    text-align: justify;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: chartreuse;
+    font-size: larger;
+    font-weight: 600;
+    font-display:calc();
+}
+
+.Cow{
+    background-image: url("image/123.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding-top: 10px;
+}
+.Cow h2{
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: xx-large;
+    font-weight: 400;
+    padding-top: 25px;
+}
+
+.Single
+{
+    display: flex;
+    margin-top: 25px;
+    margin-left: 350px;
+    background-attachment: fixed;
+}
+.oo{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: larger;width: 60%;
+    font-weight: 500;
+    text-align: justify;margin-left: 40px;
+    color: #fff;
+}
+.oo h4{
+    font-size: larger;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+
+}
+.fa-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.hh{
+    height: 250px;
+    width:800px;
+}
+.polo{
+    height: 300px;
+    width: 800px;
+}
+.fa-col img
+{
+    width: 100%;
+    display: block;
+}
+
+.Sp
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5;
+}
+
+.Sp:hover
+{
+    background: rgba(113, 226, 0, 0.7);
+}
+
+.Sp h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.Sp:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+}
+
+.Dog{
+    background-image: url("image/456.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.God{
+    display: flex;
+}
+.vivo{
+    width: 30%;
+    height: 100vh;
+    background-attachment: fixed;
+}
+.Men h1{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: red;
+}
+.Men h2{
+    font-size: 30px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: red;
+}
+.Men{
+    margin-top: 30px;
+    font-size: 20px;
+    margin-left: 5%;
+    width: 50%;
+    text-align: justify;
+    color:white;
+}
+.cv{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: #FF4B2B;
+    font-style: italic;
+}
+.facilities
+{
+    background-image: url("image/opop.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.facilities h1{
+    font-size: 40px;
+    font-style: italic;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    color: red;
+    text-align: center;
+}
+.facilities p {
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 300;
+    color: white;
+    text-align: justify;
+}
+.map{
+    float: left;
+    height: 90vh;
+    background-attachment: fixed;
+}
+.vc{
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 500;
+    margin-left: 70%;
+    font-style: italic;
+    color: #FF4B2B;
+}
+.rapper{
+    background-image: url("image/55.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.contact{
+        padding: 50px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+        width: 100%;
+        height: 100vh;
+        padding-bottom: 50px;
+      }
+.contact h1{
+        text-align: center;
+        letter-spacing: 2px;
+        padding: 50px 0;
+        background-image: url('https://a-static.besthdwallpaper.com/nba-2023-poster-wallpaper-2560x1080-114726_14.jpg');
+        background-size: cover;
+        background-clip: text;
+        -webkit-background-clip: text;
+        color: transparent;
+        background-attachment: fixed;
+      }
+ .contact p{
+        text-align: justify;
+        color:black;
+        padding-bottom: 20px;
+        letter-spacing: 1px;
+      }
+.contact .gh {color: white;      }
+.sideToside{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        height: 100%;
+        width: 40%;
+        background: #F2F2F2;
+      }
+.location {
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 100%;
+        width: 40%;
+      }
+.icon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding-top: 50px;
+      }
+.icon p{
+        margin: 20px 0;
+        text-align: center;
+      }
+.contact form{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+       width: 60%;
+        padding: 0 20px;
+      }
+.contact input,textarea{
+        background-color: #eee;
+        width: 100%;
+        border: none;
+        outline: none;
+        text-align: center;
+        padding: 12px 0;
+        margin: 18px 0;
+        color: #101010;
+        font-size: 20px;
+      }
+.contact textarea{
+        width: 300px;
+        height: 140px;
+      }
+.contactBTN{
+        background-color: #FF4B2B;
+        padding: 8px 30px;
+        border-radius: 20px;
+        color: #000;
+        transform: transition 80ms ease-in-out;
+      }
+.contactBTN:active{transform: scale(0.95);      }
+.jj{
+    text-align: center;
+}
+.VB{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    font-style: italic;
+    color:#FF4B2B;
+}
+
+.footer {
+    background-color: #222;
+    color: cyan;
+    font-size: 14px;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+  }
+  .vv{
+    background-color: cyan;
+  }
+ .footer p{
+    font-size: 15px;
+  }
+  .footer span{
+    font-size: 15px;
+  }
+  .footer i {
+    color: red;
+  }
+ .footer .social .fab,.fa-regular{
+    color: red;
+    border: cyan 1px;
+    padding: 8px;
+    border-radius: 50%;
+  }
+  .social{
+    padding: 10px;
+  }

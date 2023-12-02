@@ -1,0 +1,352 @@
+*{margin: 0; padding: 0; font-family: 'Archivo Black', sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Rubik Mono One', sans-serif;
+    font-family: 'Teko', sans-serif;}
+
+.header{
+    min-height: 100vh;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    position: relative;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+nav{
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img
+{
+    width: 70px;
+
+}
+
+.nav-links
+{
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links ul li 
+{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li a 
+{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+}
+
+.nav-links ul li ::after
+{
+  content: '';
+  width: 0%;
+  height: 3px;
+  background:  #00fff2;
+  display: block;
+  margin: auto;
+  transition: 0.5s;
+
+}
+.nav-links ul li :hover::after
+{
+    width: 100%;
+}
+.text-box{
+    width: 90%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    color: white;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+.text-box h1
+{
+    font-size: 62px;
+}
+.text-box p
+{
+    margin: 10px 0 0 40x;
+    font-size: 14x;
+    color: white;
+}
+ 
+.hero
+{
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    border: 1px white solid;
+    padding: 8px 24px;
+    font-size: 12px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    border-radius: 10px;
+
+}
+
+.hero:hover
+{
+    border: 1px solid  #00fff2;
+    background:  #00fff2;
+    transition: 0.5s;
+}
+
+
+
+.intro
+{
+    padding: 80px 20px 40px 20px;
+}
+
+
+.introdiv
+{
+    background-image: linear-gradient(rgba(40, 43, 54, 0.353),rgba(45, 47, 53, 0.518)), url(introsection.jpg);  
+    border: 1px white;
+    border-radius: 10px;
+   
+}
+
+
+.introdiv h3
+{
+    padding-top: 20px;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+}
+
+.introdiv p
+{
+    text-align: center;
+    color: rgba(240, 240, 240, 0.607);
+    padding-bottom: 40px;
+    padding-top: 30px;
+    font-size: 20px;
+    line-height: 45px;
+}
+
+
+
+
+
+.row
+{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+/*-----clubs----*/
+
+.clubs
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 50px;
+}
+
+.clubs h1
+{
+    font-size: 40px;
+}
+
+.clubs p
+{
+    font-size: 30px;
+}
+
+.clubs-col
+{
+    flex-basis: 32%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.clubs-col img
+{
+    width: 100%;
+    display: block;
+}
+
+.layer
+{
+    background: transparent;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 0.5;
+}
+
+.layer:hover
+{
+    background:  #087c77aa;
+}
+
+.layer h3
+{
+    width: 100%;
+    font-weight: 500;
+    color: white;
+    font-size: 26px;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    opacity: 0;
+    transition: 0.5s;
+}
+.layer:hover h3
+{
+    bottom: 49%;
+    opacity: 1;
+}
+
+
+/*------facalities-------*/
+
+.activity
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+
+}
+
+.activity-col
+{
+    flex-basis: 31%;
+    border-radius: 10px;
+    margin-bottom: 5%;
+    text-align: left;
+
+}
+
+.activity-col img
+{
+    border-radius: 10px;
+    width: 100%;
+}
+
+.activity-col p
+{
+    padding: 0;
+
+}
+
+.activity-col h3
+{
+    margin-top: 16px;
+    margin-bottom: 15px ;
+    text-align: left;
+}
+
+/*------testimonials----*/
+
+.testimonials
+{
+    width: 80%;
+    margin: auto;
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+
+
+.footer
+{
+    background-color: #06a7a7;
+    margin-right: auto;
+    margin-left: auto ;
+
+}
+
+.footer_rightcol
+{
+    padding: 40px 70px 40px 70px;
+    
+    width: 30%;
+   
+}
+
+.footer_rightcol a
+{
+    color: white;
+    font-family: Arial;
+    
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 50px;
+   
+
+}
+
+.footer_leftcol
+{
+    color: white;
+    width: 20%;
+    float: right;
+    padding: 70px;
+}
+.footer_leftcol a{
+    float: right;
+}
+.footer_leftcol a i{
+    color: #fff;
+    padding-top: 150px;
+}
+
+.footer_rightcol a :hover
+{
+    color: #00fff2;
+}
+
+.footer_rightcol h3
+{
+    color: white;
+    font-family: Arial;
+    
+    text-decoration: none;
+    font-size: 13px;
+    line-height: 50px;
+   
+
+}
+
+.footer_rightcol h3:hover
+{
+    color: #00fff2;
+}
+.logout{
+    text-align: center;
+    float: right;
+    padding: 20px;
+}
+.logout a button{
+    font-family: sans-serif;
+    padding: 10px;
+    font-weight: 900;
+    border-radius: 5px;
+}

@@ -1,0 +1,605 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: #050623;
+}
+#header{
+    min-height: 100vh;
+    width: 100%;
+    background-image:linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)), url("image/champions-champions-league-football-uefa-wallpaper-preview.jpg") ;
+    opacity: 0.8;
+    background-size: cover;
+    background-position: center ;
+    background-repeat: no-repeat;
+    position: relative;
+    
+   
+}
+.back-video
+{
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+@media (min-aspect-ratio: 16/9)
+{
+  .back-video
+  {
+    width: 100%;
+    height: auto;
+
+  }
+}
+@media (max-aspect-ratio: 16/9)
+{
+  .back-video
+  {
+    width: auto;
+    height: 100%;
+
+  }
+}
+
+
+.logo
+{
+    font-size: 10px;
+    color:white;
+    text-decoration: none;
+    font-weight: 500;
+
+}
+img{
+    margin: 0;
+    padding: 0;
+}
+nav{
+    display: flex;
+    padding: 0 6% ;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 2rem;
+}
+
+nav img{
+    width: 100px;
+
+}
+.nav-link{
+    flex: 1;
+    text-align: right;
+}
+.nav-link ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+.nav-link ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+
+
+}
+
+.nav-link ul li::after{
+    content: '';
+    width: 0%;
+    height: 2px;
+    background: #f44436;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+
+}
+.nav-link ul li:hover::after{
+    width: 100%;
+    
+}
+.text-box{
+    width: 90%;
+    color: white;
+    position: absolute;
+    margin: 50px 50px;
+    text-align: center;
+    background-image: url(image/3-nature-wallpaper-mountain.jpg);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text-box h1:hover
+{
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+p{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.uppercase{
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    text-shadow: 2px 2px;
+    transition: 0.5s;
+}
+
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0px 40px;
+    font-size: 14px;
+    
+    background-image: linear-gradient(to right,red,yellow);
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.hero-btn{
+    display: inline-block;
+    text-decoration: none;
+    color: lightgoldenrodyellow;
+    border: 1px solid lightskyblue;
+    padding: 12px 30px;
+    font-size: 13px;
+    background: transparent;
+    position: relative;
+    cursor: pointer;
+    font-style: italic;
+    
+
+}
+.hero-btn:hover{
+    border: 1px solid #f44436;
+    background: #f44436;
+    transition: 1s;
+    
+}
+.material-icons{
+    size: 10px ;
+}
+nav .fa{
+    display: none;
+}
+@media(max-width: 700px)
+{
+    .text-box h1
+    {
+        font-size: 20px;
+    }
+    .nav-link ul li
+    {
+        display: block;
+    }
+    .nav-link
+    {
+        position: absolute;
+        background:lightskyblue;
+        height: 100vh;
+        width: 200px;
+        top: 0;
+        right: -200px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav .fa
+    {
+        display: block;
+        color: black;
+        margin: 10px;
+        font-size: 22px;
+        cursor: pointer;
+
+    }
+    .nav-link ul
+    {
+        padding: 30px;
+    }
+
+    
+}
+/* -----Club---*/
+/*.club
+{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}*/
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap');
+*{
+  margin-top: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto Slab",sans-serif;
+}
+section:nth-child(3){
+  height: 130vh;
+  color: #1D212D;
+ 
+}
+section:nth-child(4){
+  height: 130vh;
+  color: #1D212D;
+  background: #050623;
+}
+section  .container{
+  margin: 100px 100px 100px 0;
+  
+}
+section h2{
+  font-size: 40px;
+  text-align: center;
+  text-transform: uppercase;
+  
+}
+section .card{
+  display: flex;
+}
+section .card .text-card{
+  background: #5D6D7E ;
+  margin: 20px;
+  padding: 20px;
+
+}
+section .card .text-card h3{
+  font-size: 30px;
+  text-align: 20px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+@media (max-width: 900px)
+{
+  section .card{
+      flex-direction: column;
+  }
+}
+.reveal{
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+.reveal .aa{
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: #5D6D7E;
+  text-align: center;
+  height: 280px;
+  margin: 20% 25%;
+  padding: 20px 0;
+  text-decoration: none;
+  list-style: none;
+  text-align: justify;
+}
+.reveal .aa h3{
+    text-align: center;
+}
+.reveal.active{
+  transform: translateY(0px);
+  opacity: 1;
+}
+
+/*div.rule
+{
+    text-shadow: 0 10px 20px rgba(26, 203, 35, 0.5);
+    pointer-events: none;
+    color: rgb(109, 45, 392);
+    width: 50%;
+    height: 50%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    border: hidden 2px ;
+    margin:0 25% 15%;
+
+}
+.rule .text{
+    text-align: center;
+}*/
+.about{
+    padding: 5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    margin: 0 auto;
+    width: 80rem;
+    cursor: default;
+    color: #eee;
+  }
+  .about img{
+    width: 500px;
+    height: auto;
+    border-radius: 67% 33% 67% 33% / 28% 37% 63% 72% ;
+  }
+  .about-text{
+    width: 700px;
+  }
+  .about-text h1{
+    
+    font-size: 3em;
+    font-weight: 800;
+    line-height: 50px;
+    font-family: 'Montserrat', sans-serif;
+    margin-bottom: 30px;
+    background-image: url("https://mcdn.wallpapersafari.com/medium/13/62/EgPDBh.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-attachment: fixed;
+  }
+  .about-text p{
+    font-size: 18pt;
+    color: #6d1d29;
+    line-height: 40px;
+    text-align: justify;
+  }
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+    padding-bottom: 50px;
+  }
+  .contact h1{
+    text-align: center;
+    letter-spacing: 2px;
+    padding: 20px 0;
+    background-image: url('https://images.pexels.com/photos/2911519/pexels-photo-2911519.jpeg?auto=compress&cs=tinysrgb&w=1600');
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    background-attachment: fixed;
+  }
+  .contact p{
+    text-align: justify;
+    color: #101010;
+    padding-bottom: 20px;
+    letter-spacing: 1px;
+  }
+  .sideToside{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    height: 100%;
+    width: 40%;
+    background: #F2F2F2;
+  }
+  .location {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 40%;
+  }
+  .icon{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 50px;
+  }
+  .icon p{
+    margin: 20px 0;
+    text-align: center;
+  }
+  .contact form{
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   flex-direction: column;
+   width: 60%;
+    padding: 0 20px;
+  }
+  .contact input,textarea{
+    background-color: #eee;
+    width: 100%;
+    border: none;
+    outline: none;
+    text-align: center;
+    padding: 12px 0;
+    margin: 18px 0;
+    color: #101010;
+    font-size: 20px;
+  }
+  .contact textarea{
+    width: 300px;
+    height: 160px;
+  }
+  .contactBTN{
+    background-color: #FF4B2B;
+    padding: 8px 30px;
+    border-radius: 10px;
+    color: #000;
+    transform: transition 80ms ease-in-out;
+    border: none;
+  }
+  .contactBTN:active{
+    transform: scale(0.95);
+  }
+
+  .ad{
+    height: 230px;
+    width: 30%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    margin: 0 19px;
+    }
+
+.k{text-align: center;
+    background-color: rgb(79, 2, 2);border-top:solid 3px black;border-bottom:solid 7px black;border-right:solid 7px black;
+    color: white;
+    padding: 20px;font-size: 35px;
+    font-weight:10px;text-shadow:3px 4px black;}
+
+.wrapper
+{
+  width: 1170px;
+  margin: 5%;
+}
+.img1
+{
+  position: absolute;
+  z-index: 2;
+  transition: .4s;
+  transform-origin: 50%,50%;
+  width: 100%;
+}
+.img2
+{
+  filter: blur(20px);
+  transform: scale(1.1);
+  opacity: 1;
+  transform: -4s;
+  width: 100%;
+}
+.ad:hover .img1
+{
+  filter: blur(20px);
+  transform: scale(1.1);
+  opacity: 0;
+}
+.ad:hover .img2
+{
+  filter: blur(0);
+  transform: scale(1);
+  opacity: 1;
+}
+
+footer {
+  background-color: #222;
+  color: #fff;
+  font-size: 14px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+footer p{
+  font-size: 15px;
+}
+footer span{
+  font-size: 15px;
+}
+footer i {
+  color: red;
+}
+footer .social .fab,.fa-regular{
+  color: white;
+  border: #eee solid 1px;
+  padding: 8px;
+  border-radius: 50%;
+}
+.social{
+  padding: 10px;
+}
+.course
+{
+    background-image: linear-gradient(rgba(3,2,44,0.2),rgba(3,2,44,0.2));
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100%;
+    margin: auto;
+    text-align: center;
+    padding: 100px;
+    
+  
+}
+#nature
+{
+  background-image: url("image/beautiful-sky-wallpaper-preview.jpg");
+    background-size: cover;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.course h1
+{
+    font-size: 50px;
+    font-weight: 600;
+}
+
+.course p{
+    font-size: 25px;
+    font-weight: 300px;
+    line-height: 22px;
+    padding: 10px;
+    font-style: italic;
+}
+
+.row
+{
+    display: flex;
+    margin-top: 5px;
+    justify-content: space-between;
+}
+
+.course-col
+{
+    flex-basis: 31%;
+    backdrop-filter: blur(5px);
+    border: solid 3px #31ddbb;
+    box-shadow: 28px 36px 23px 0px rgba(153, 14, 16, 1);
+-webkit-box-shadow: 28px 36px 23px 0px rgba(153, 14, 16, 1);
+-moz-box-shadow: 28px 36px 23px 0px rgba(153, 14, 16, 1);
+    color: #fff;
+    border-radius: 20px;
+    margin-bottom: 5%;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    transition: 0.5s;
+    
+}
+
+.course-col h3
+{
+    text-align: center;
+    font-weight: 300;
+    color:cyan;
+    margin: 10px 0;
+    font-size: xx-large;
+    font-size: 400;
+
+}
+.course-col p{
+    font-size: large;
+    font-weight: 100;
+}
+
+.course-col:hover
+{
+  transform: scale(0.8) ;
+-webkit-transform: scale(0.8) ;
+-moz-transform: scale(0.8) ;
+    box-shadow: 0 0 20px 0 rgba(212, 9, 9, 0.2);
+}
